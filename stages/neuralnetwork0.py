@@ -1,24 +1,26 @@
-# we will write a neural network from scratch.
-# a neuron with 3 inputs, 3 biases and different weights.
-# gitving 3 outputs.
+'''In this tutorial we will be learning about how a neuron work'''
 
-inputs = [1.0, 2.0, 3.0, 2.5] #initialising inputs
+"""
+    Our Neuron Will Consist :
+    - A input vector of 3 dimension (you can choose any no. of dimension)
+    - A weight vector of 3 dimension (you can choose any no. of dimension --> but it should be equal to the no. of inputs)
+    - A bias (each neuron has only one bias)
+"""
 
-#Initializing weight and bias to alter the output of the neural network
-# weights initialisation
-weights1 = [0.2,0.8,-0.5,1.0]
-weights2 = [0.5, -0.91, 0.26, -0.5]
-weights3 = [-0.26, -0.27, 0.17, 0.87]
 
-#Biases initialization
-bias1 = 2
-bias2 = 3
-bias3 = 0.5
+# weight vector 
+inputs = [1.0, 2.0, 3.0, 2.5] 
 
-# output = summation(input^i * weights^ij + bias)
-output = [inputs[0]*weights1[0] + inputs[0]*weights1[0] + inputs[0]*weights1[0] + inputs[0]*weights1[0] + bias1 ,
-          inputs[0]*weights2[0] + inputs[0]*weights2[0] + inputs[0]*weights2[0] + inputs[0]*weights2[0] + bias2 ,
-          inputs[0]*weights3[0] + inputs[0]*weights3[0] + inputs[0]*weights3[0] + inputs[0]*weights3[0] + bias3]
+#Initializing weight and bias to alter the output of a neuron
+weights = [0.2,0.8,-0.5,1.0]
+bias = 2
 
-print(output)
+
+# calculate the sum of all the (input*corresponding_weights)
+weighted_sum = sum([inputs[i] * weights[i] for i in range(len(inputs))])
+
+# Add the bias
+weighted_sum += bias
+
+print(weighted_sum)
 
