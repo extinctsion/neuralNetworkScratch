@@ -6,11 +6,11 @@
 
 ## Let's Learn About Components Of A Neuron
 
-- **Inputs** -  `Imagine you have a bunch of friends, and each friend gives you a number. These numbers represent information or data. These are the "inputs" to our neuron.`
+- **Inputs** -  Imagine you have a bunch of friends, and each friend gives you a number. These numbers represent information or data. These are the "inputs" to our neuron.
 
-- **Weights** - `Now, each friend's opinion might matter to you more or less depending on how much you trust them. You assign a "weight" to each friend's input. If you trust a friend a lot, their input has a higher weight; if you trust them less, their input has a lower weight.`
+- **Weights** - Now, each friend's opinion might matter to you more or less depending on how much you trust them. You assign a "weight" to each friend's input. If you trust a friend a lot, their input has a higher weight; if you trust them less, their input has a lower weight.
 
-- **Bias** = `You also have a personal bias. It's like your own opinion or mood on that day.`
+- **Bias** - You also have a personal bias. It's like your own opinion or mood on that day.
 
 ## How Does A Neuron Work
 
