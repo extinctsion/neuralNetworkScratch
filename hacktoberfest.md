@@ -9,14 +9,14 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 
 # 👍 Awesome! How and What can I Contribute? 
 It's very easy. Follow the below steps you need to create your -(maybe)- EXAMPLE first pull request.
-1. Fork this repository by clicking the Fork button on the top right corner of this page or simply [click here](https://github.com/Tinny-Robot/neuralNetworkScratch).
+1. Fork this repository by clicking the Fork button on the top right corner of this page or simply [click here](https://github.com/extinctsion/neuralNetworkScratch).
 2. Create a new file and **add** a new Program in any programming language like  Python, etc. (Note: No duplicate programs can exist!)
 4. After adding the code, Commit your changes.
 5. Create a new pull request from your forked repository (Button located at the top of your repository)
 8. Star this repository!
 
 ### Don't forget to Follow and Share :)
-<a href="https://github.com/Tinny-Robot" aria-label="Follow Me on GitHub"><img src="https://img.shields.io/badge/Follow me-green?style=for-the-badge&logo=github"/>
+<a href="https://github.com/extinctsion" aria-label="Follow Me on GitHub"><img src="https://img.shields.io/badge/Follow me-green?style=for-the-badge&logo=github"/>
 <br>
 
 
@@ -43,6 +43,6 @@ It's very easy. Follow the below steps you need to create your -(maybe)- EXAMPLE
 
 
 
-Tinny-Robot"
+extinctsion"
 
 - Happy hacking!
