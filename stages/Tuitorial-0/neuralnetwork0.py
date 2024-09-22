@@ -1,13 +1,12 @@
-'''In this tutorial we will be learning about how a neuron work'''
+from typing import List
+import numpy as np
+'''In this tutorial we will be learning about how a neuron work
 
-"""
     Our Neuron Will Consist :
     - A input vector of 3 dimension (you can choose any no. of dimension)
     - A weight vector of 3 dimension (you can choose any no. of dimension --> but it should be equal to the no. of inputs)
     - A bias (each neuron has only one bias)
-"""
-from typing import List
-import numpy as np
+'''
 
 
 # we will write a neural network from scratch.
