@@ -2,19 +2,20 @@ from typing import List
 import numpy as np
 
 """
-This script demonstrates how a neuron works by performing calculations with inputs, 
-weights, and biases. It creates a simple neural network with 3 neurons.
+This module demonstrates the workings of a simple neuron in a neural network. 
+It includes a three-dimensional input vector, corresponding weights, and biases 
+to calculate the output of three neurons.
 """
 
-# Inputs, weights, and biases for a neural network with 3 neurons.
-inputs: List[float] = [1.0, 2.0, 3.0, 2.5]  # initializing inputs
+# Initialize inputs
+inputs: List[float] = [1.0, 2.0, 3.0, 2.5]
 
-# Initializing weights randomly for each neuron
+# Initialize weights randomly for each neuron
 weights1: List[float] = np.random.rand(4)
 weights2: List[float] = np.random.rand(4)
 weights3: List[float] = np.random.rand(4)
 
-# Biases initialization as 0
+# Initialize biases to zero
 bias1: float = 0
 bias2: float = 0
 bias3: float = 0
