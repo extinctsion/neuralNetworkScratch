@@ -24,6 +24,9 @@ class LayerDense:
 class ActivationReLU:
     """ReLU activation function."""
     
+    def __init__(self):
+        self.output = None  # Initialize output attribute in __init__
+
     def forward(self, inputs):
         """Apply ReLU activation function."""
         self.output = np.maximum(0, inputs)
@@ -32,6 +35,9 @@ class ActivationReLU:
 class ActivationSoftmax:
     """Softmax activation function."""
     
+    def __init__(self):
+        self.output = None  # Initialize output attribute in __init__
+
     def forward(self, inputs):
         """Apply softmax activation function."""
         exp_values = np.exp(inputs - np.max(inputs, axis=1, keepdims=True))
@@ -61,6 +67,8 @@ class LossCategoricalCrossEntropy(Loss):
             correct_confidences = y_pred_clipped[range(samples), y_true]
         elif len(y_true.shape) == 2:
             correct_confidences = np.sum(y_pred_clipped * y_true, axis=1)
+        else:
+            raise ValueError("Unexpected shape for y_true")
 
         negative_log_likelihoods = -np.log(correct_confidences)
         return negative_log_likelihoods
