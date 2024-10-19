@@ -1,49 +1,34 @@
 from typing import List
 import numpy as np
-'''In this tutorial we will be learning about how a neuron work
 
-    Our Neuron Will Consist :
-    - A input vector of 3 dimension (you can choose any no. of dimension)
-    - A weight vector of 3 dimension (you can choose any no. of dimension --> but it should be equal to the no. of inputs)
-    - A bias (each neuron has only one bias)
-'''
+"""
+This module demonstrates the workings of a simple neuron in a neural network. 
+It includes a three-dimensional input vector, corresponding weights, and biases 
+to calculate the output of three neurons.
+"""
 
+# Initialize inputs
+inputs: List[float] = [1.0, 2.0, 3.0, 2.5]
 
-# we will write a neural network from scratch.
-# a neuron with 3 inputs, 3 biases and different weights.
-# gitving 3 outputs.
-
-inputs: List[float] = [1.0, 2.0, 3.0, 2.5]  # initializing inputs
-
-# Initializing weight and bias to alter the output of the neural network
-
-# weights initialization at random
+# Initialize weights randomly for each neuron
 weights1: List[float] = np.random.rand(4)
 weights2: List[float] = np.random.rand(4)
 weights3: List[float] = np.random.rand(4)
 
-# Biases initialization as 0
+# Initialize biases to zero
 bias1: float = 0
 bias2: float = 0
 bias3: float = 0
 
-# calculate the output
+# Calculate the output for each neuron
 output: List[float] = [
-    (inputs[0] * weights1[0]
-     + inputs[0] * weights1[1]
-     + inputs[0] * weights1[2]
-     + inputs[0] * weights1[3]
-     + bias1),
-    (inputs[0] * weights2[0]
-     + inputs[0] * weights2[1]
-     + inputs[0] * weights2[2]
-     + inputs[0] * weights2[3]
-     + bias2),
-    (inputs[0] * weights3[0]
-     + inputs[0] * weights3[1]
-     + inputs[0] * weights3[2]
-     + inputs[0] * weights3[3]
-     + bias3),
+    (inputs[0] * weights1[0] + inputs[1] * weights1[1] + inputs[2] * weights1[2] +
+     inputs[3] * weights1[3] + bias1),
+    (inputs[0] * weights2[0] + inputs[1] * weights2[1] + inputs[2] * weights2[2] +
+     inputs[3] * weights2[3] + bias2),
+    (inputs[0] * weights3[0] + inputs[1] * weights3[1] + inputs[2] * weights3[2] +
+     inputs[3] * weights3[3] + bias3),
 ]
 
+# Print rounded output values
 print(f"The output is: {np.round(output, 4)}")
