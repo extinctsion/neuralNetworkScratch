@@ -2,10 +2,11 @@
 Applying categorical Cross Entropy to nnfs framework.
 """
 
-import numpy as np 
+import numpy as np
 import nnfs
 from nnfs.datasets import spiral_data
 
+# Initialize nnfs and set random seed for reproducibility
 nnfs.init()
 
 class LayerDense:
@@ -47,6 +48,13 @@ class ActivationSoftmax:
 
 class Loss:
     """Base class for loss functions."""
+    
+    def forward(self, output, y):
+        """
+        This function should be overridden by subclasses to calculate
+        the loss based on predictions and ground-truth labels.
+        """
+        raise NotImplementedError("The forward method must be implemented in subclasses.")
     
     def calculate(self, output, y):
         """Calculate the loss."""
@@ -98,4 +106,3 @@ loss_function = LossCategoricalCrossEntropy()
 loss = loss_function.calculate(activation2.output, y_labels)
 
 print("Loss:", loss)
-
