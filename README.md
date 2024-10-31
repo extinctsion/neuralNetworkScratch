@@ -11,6 +11,7 @@ This repository contains implementations of neural networks written from scratch
 - **Python**: A clear, easy-to-understand implementation leveraging Python’s simplicity and flexibility.
 - **Ruby**: A Ruby-style implementation showcasing the elegance and readability of the language.
 - **Rust**: A memory-safe, highly performant implementation utilizing Rust's unique ownership system.
+- **Julia**: Julia simplifies neural network implementation with high-level syntax, optimized libraries, and seamless GPU integration.
 
 ## Features
 - **Feedforward Neural Networks**: Basic multi-layer perceptron models with fully connected layers.
@@ -36,6 +37,7 @@ Ensure you have the appropriate environment set up for each language:
 - **Python**: Python 3.x.
 - **Ruby**: Ruby (v2.6 or above).
 - **Rust**: Requires the Rust toolchain (`cargo`).
+- **Julia**: Requires Julia to be downloaded from Microsoft Store or its official website.
 
 ### Running the Neural Networks
 For each language, navigate to the corresponding folder and follow the instructions in the `README.md` file present in each directory.
