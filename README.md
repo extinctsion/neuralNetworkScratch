@@ -4,6 +4,7 @@ This repository contains implementations of neural networks written from scratch
 
 ## Languages Covered
 - **Bash**: An unconventional approach to neural networks, showcasing how basic shell scripting can be extended to perform mathematical operations.
+- **C**: A low-level, high-performance implementation leveraging direct hardware access and manual memory management for efficiency.
 - **C#**: A high-level implementation using the .NET framework's features to build a neural network efficiently.
 - **C++**: A low-level, memory-optimized implementation, emphasizing performance and manual memory management.
 - **Java**: A robust and scalable implementation, leveraging Java's object-oriented features.
